@@ -40,17 +40,13 @@
       
         * [反义语法](#反义语法)
 
-        * [使用下划线](#使用下划线)
-
-        * [使用视频播放](#使用视频播放)
-
-        * [自定义字体样式](#自定义字体样式)
+        * [修改图片的显示大小](#修改图片的显示大小)
 
         * [修改文字的显示重心](#修改文字的显示重心)
 
         * [使用的展开收缩功能](#使用的展开收缩功能)
 
-* 开车指南介绍了常规的语法用法，精通 markdown 语法同学可以略过，飙车指南则介绍了 markdown 语法之外的一些用法，因为 markdown 本身支持的语法格式太少，往往没有办法满足我们的需求，所以需要用到 html 语法来帮我们扩展一些非常规的用法，例如插入视频、修改图片显示的大小，修改字体大小和颜色等等。
+* 开车指南介绍了常规的语法用法，精通 markdown 语法同学可以略过，飙车指南则介绍了 markdown 语法之外的一些用法，因为 markdown 本身支持的语法格式太少，往往没有办法满足我们的需求，所以需要用到 html 语法来帮我们扩展一些非常规的用法，例如修改图片显示的大小，修改文本重心、展开收缩功能等等。
 
 * 另外大家可能好奇我为什么不用网上已有的方案，在这个开源项目之前，我其实看过很多人写的 markdown 语法介绍，但是都没能符合我的要求，普遍存在以下问题：
 
@@ -447,46 +443,6 @@ ___
 
 \#\#\#\# 我是谁
 
-### 使用下划线
-
-* 需要用 html 标签来实现，具体的格式如下：
-
-```
-<u>下划线</u>
-```
-
-* 具体的效果如下：
-
-<u>下划线</u>
-
-### 使用视频播放
-
-* 可以使用 `video` 标签实现视频播放，`width` 属性代表播放区域的宽度，`height` 属性代表播放区域的高度，`controls` 属性代表是播放的控制器，`muted` 属性代表是否静音播放，`autoplay` 属性代表是否自动播放，`loop` 属性代表是循环播放，具体的格式如下：
-
-```xml
-<video src="file/local_video.mp4" width="270px" height="585px" controls="" muted=""></video>
-
-<video src="file/local_video.mp4" width="270px" height="585px" controls="" muted="" autoplay=""></video>
-
-<video src="file/local_video.mp4" width="270px" height="585px" controls="" muted="" autoplay="" loop=""></video>
-
-<video src="file/local_video.mp4" style="max-width:270px;" controls="" muted=""></video>
-
-<video src="http://vfx.mtime.cn/Video/2019/06/29/mp4/190629004821240734.mp4" width="500px" height="281px" controls="" muted=""></video>
-```
-
-* 具体的效果如下：
-
-<video src="file/local_video.mp4" width="270px" height="585px" controls="" muted=""></video>
-
-<video src="file/local_video.mp4" width="270px" height="585px" controls="" muted="" autoplay=""></video>
-
-<video src="file/local_video.mp4" width="270px" height="585px" controls="" muted="" autoplay="" loop=""></video>
-
-<video src="file/local_video.mp4" style="max-width:270px;" controls="controls" muted="muted"></video>
-
-<video src="http://vfx.mtime.cn/Video/2019/06/29/mp4/190629004821240734.mp4" width="500px" height="281px" controls="controls" muted="muted"></video>
-
 ### 修改图片的显示大小
 
 * 有两种方式修改，一种是指定图片的宽高，另外一种是指定图片的缩放比例，具体的格式如下：
@@ -502,26 +458,6 @@ ___
 <img src="https://www.baidu.com/img/bd_logo.png" width="300px" height="200px" alt="图片名称" />
 
 <img src="https://www.baidu.com/img/bd_logo.png" width="20%" height="20%" alt="图片名称" />
-
-### 自定义字体样式
-
-* 需要用 html 标签来实现，具体的格式如下：
-
-```
-<font size="4">自定义字体大小</font>
-
-<font color="red">自定义字体颜色</font>
-
-<font color="#0000ff" size="4">自定义字体颜色、大小</font>
-```
-
-* 具体的效果如下：
-
-<font size="4">自定义字体大小</font>
-
-<font color="red">自定义字体颜色</font>
-
-<font color="#0000ff" size="4">自定义字体颜色、大小</font>
 
 ### 修改文字的显示重心
 
